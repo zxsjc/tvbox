@@ -1,0 +1,20 @@
+{
+    "urls": [
+        
+     
+  {
+        "url": "https://gitee.com/zxsjc/hbzxsjc/raw/master/tvbox.json",
+          "name": "燕子gitee"
+     },
+       {"url": "http://zxsjc.web3v.vip/pg/api.json",  "name": "zxsjc-PG"},
+       {"url": "https://github.moeyy.xyz/https://raw.githubusercontent.com/zxsjc/1688/main/pg/api.json",  "name": "github-PG"},
+       {"url": "https://agit.ai/leevi/PiG/raw/branch/master/jsm.json",  "name": "PG"},
+       {"url": "https://ghproxy.net/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json",  "name": "香雅情"},
+       {"url": "http://肥猫.live","name": "肥猫"}, 
+       {"url": "http://cdn.qiaoji8.com/tvbox.json","name": "巧技"}, 
+       {"url": "https://100km.top/0","name":"校花大王草"},
+	   {"url": "http://svip.weixine.net:88/uploads/itvbox/svip.json","name": "💖运输车线路"},		
+       {"url": "http://xhww.fun:63/小米/DEMO.json","name":"🌹小米"},
+       {"url": "http://饭太硬.top/tv","name":"🌹太硬"}
+]
+}
