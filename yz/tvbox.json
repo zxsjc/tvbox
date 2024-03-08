@@ -4,7 +4,7 @@
       "name": "燕子直播ipv6",
       "type": 0,
       "playerType": 1,
-      "url": "./ipv6.txt",
+      "url": "https://gitee.com/zxsjc/hbzxsjc/raw/master/ipv6.txt",
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": ""
 
