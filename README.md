@@ -1,3 +1,12 @@
+https://gh-proxy.com/https://raw.githubusercontent.com/lizongying/my-tv-0/main/app/src/main/res/raw/mobile.txt
+https://gh-proxy.com/https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u
+https://gh-proxy.com/https://raw.githubusercontent.com/SPX372928/MYIPTV/master/黑龙江PLTV移动CDN版.txt
+
+
+https://fastly.jsdelivr.net/gh/qist/tvbox@master/dianshi.json
+https://fastly.jsdelivr.net/gh/2hacc/TVBox@main/oktv.json
+
+
 APTV
 https://github.moeyy.xyz/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u    APTV IPv6
 
