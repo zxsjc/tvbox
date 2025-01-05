@@ -2,6 +2,7 @@ https://gh-proxy.com/https://raw.githubusercontent.com/lizongying/my-tv-0/main/a
 https://gh-proxy.com/https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u
 https://gh-proxy.com/https://raw.githubusercontent.com/SPX372928/MYIPTV/master/黑龙江PLTV移动CDN版.txt
 https://gh-proxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/list.txt
+https://gh-proxy.com/https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/APTV.m3u
 
 https://fastly.jsdelivr.net/gh/qist/tvbox@master/dianshi.json
 https://fastly.jsdelivr.net/gh/2hacc/TVBox@main/oktv.json
