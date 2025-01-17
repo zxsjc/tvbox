@@ -1,62 +1,45 @@
 {
   "lives": [
-    {
+   {
       "name": "燕子直播ipv6",
       "type": 0,
       "playerType": 1,
-      "url": "https://gitee.com/zxsjc/hbzxsjc/raw/master/ipv6.txt",
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": ""
-
+      "url": "https://gitee.com/zxsjc/hbzxsjc/raw/master/ipv.m3u",
+      "epg": "https://epg.zbds.top/?ch={name}&date={date}",
+      "logo": "https://epg.iill.top/logo/{name}.png"
     },
-     {
-      "name": "昊宸直播ipv6",
-      "type": 0,
-      "playerType": 1,
-      "url": "https://live.fanmingming.com/tv/m3u/ipv6.m3u",
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": ""
-    },
-
-    {
-      "name": "俊于直播ipv6",
-      "type": 0,
-      "url": "http://home.jundie.top:81/Cat/tv/live.txt",
-      "playerType": 1,
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": ""
-    },
+   
         {
       "name": "妞妞直播ipv6",
       "type": 0,
       "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Meroser/IPTV/main/IPTV.m3u",
       "playerType": 1,
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
+      "epg": "https://epg.zbds.top/?ch={name}&date={date}",
+      "logo": "https://epg.iill.top/logo/{name}.png"
     },
   {
       "name": "龙涯直播IPV4",
       "type": 0,
       "url": "https://gitee.com/lyx223/ipv4/raw/master/ipv4.txt",
       "playerType": 1,
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": ""
+       "epg": "https://epg.zbds.top/?ch={name}&date={date}",
+      "logo": "https://epg.iill.top/logo/{name}.png"
     },
     {
       "name": "飞雪直播IPV4",
       "type": 0,
       "url": "https://github.moeyy.xyz/https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt",
       "playerType": 1,
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": ""
+      "epg": "https://epg.zbds.top/?ch={name}&date={date}",
+      "logo": "https://epg.iill.top/logo/{name}.png"
     },
         {
       "name": "杨蔓直播ipv4",
       "type": 0,
       "url": "https://gitee.com/yangmangeek/my-iptv/raw/master/IPV4.m3u",
       "playerType": 1,
-      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
+      "epg": "https://epg.zbds.top/?ch={name}&date={date}",
+      "logo": "https://epg.iill.top/logo/{name}.png"
     }
 
   ],
