@@ -1,5 +1,5 @@
 {
-  "spider": "./OK.js",
+  "spider": "./okpng.png;md5;019db9722f0d5dce2e979922e5bb3f24",
   "wallpaper":"https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1720314187703/w1.jpg",
   "logo":"https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1720314090387/ol.txt",
   "sites": [
