@@ -39,21 +39,34 @@ CCTV-17 农业农村,webview://https://yangshipin.cn/tv/home?pid=600001810
 CCTV风云剧场,webview://https://yangshipin.cn/tv/home?pid=600099658
 CCTV第一剧场频道,webview://https://www.yangshipin.cn/tv/home?pid=600099655
 CCTV怀旧剧场,webview://https://yangshipin.cn/tv/home?pid=600099620
-CCTV-1 综合,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=1
-CCTV-3 综艺,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=2
-CCTV-5 体育,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=3
-CCTV-6 电影,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=4
-CCTV-7 国防军事,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=5
-CCTV-9 纪录,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=6
-CCTV-10 科教,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=7
-CCTV-11 戏曲,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=8
-CCTV-12 社会与法,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=9
-CCTV-13 新闻,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=10
 
 卫视,#genre#
-北京卫视,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=11
-浙江卫视,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=12
-河南卫视,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=14
+安徽卫视,webview://https://www.ahtv.cn/folder9000/folder20193?channelIndex=0
+北京卫视,webview://https://www.brtn.cn/btv/btvsy_index
+重庆卫视,webview://http://www.setv.fjtv.net/live/
+东方卫视,webview://https://live.kankanews.com/huikan/
+甘肃卫视,webview://https://www.gstv.com.cn/zxc.jhtml
+广西卫视,webview://https://tv.gxtv.cn/channel/channelivePlay_e7a7ab7df9fe11e88bcfe41f13b60c62.html
+广东卫视,webview://https://www.gdtv.cn/tvChannelDetail/43
+贵州卫视,webview://https://www.gzstv.com/tv/ch01
+湖南卫视,webview://http://tc.hnntv.cn/zb/28666112.shtml
+河北卫视,webview://https://www.hebtv.com/19/19js/st/xdszb/index.shtml?index=0
+黑龙江卫视,webview://https://www.hljtv.com/live/
+河南卫视,webview://https://static.hntv.tv/kds/#/
+湖北卫视,webview://https://news.hbtv.com.cn/app/tv/431
+吉林卫视,webview://https://www.jlntv.cn/tv?id=104
+江苏卫视,webview://https://live.jstv.com/
+江西卫视,webview://https://www.jxntv.cn/live/#/jxtv1
+辽宁卫视,webview://https://www.nmtv.cn/liveTv
+宁夏卫视,webview://http://www.nxtv.com.cn/tv/ws/
+青海卫视,webview://https://www.qhbtv.com/new_index/live/folder2646/
+山东卫视,webview://https://v.iqilu.com/live/sdtv/index.html
+山西卫视,webview://https://www.sxrtv.com/tv/
+陕西卫视,webview://http://www.sxtvs.com/sxtvs_sxws/index.html
+四川卫视,webview://https://www.sctv.com/watchTV
+天津卫视,webview://https://www.vtibet.cn/html/CHAL1492477520535104/2021111212835975309/
+新疆卫视,webview://https://www.xjtvs.com.cn/column/tv/434
+云南卫视,webview://https://www.yntv.cn/live.html
 安徽卫视,webview://https://yangshipin.cn/tv/home?pid=600002532
 北京卫视,webview://https://yangshipin.cn/tv/home?pid=600002309
 重庆卫视,webview://https://yangshipin.cn/tv/home?pid=600002531
@@ -85,32 +98,6 @@ CCTV-13 新闻,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=10
 新疆卫视,webview://https://yangshipin.cn/tv/home?pid=600152138
 云南卫视,webview://https://yangshipin.cn/tv/home?pid=600190402
 浙江卫视,webview://https://yangshipin.cn/tv/home?pid=600002520
-安徽卫视,webview://https://www.ahtv.cn/folder9000/folder20193?channelIndex=0
-北京卫视,webview://https://www.brtn.cn/btv/btvsy_index
-重庆卫视,webview://http://www.setv.fjtv.net/live/
-东方卫视,webview://https://live.kankanews.com/huikan/
-甘肃卫视,webview://https://www.gstv.com.cn/zxc.jhtml
-广西卫视,webview://https://tv.gxtv.cn/channel/channelivePlay_e7a7ab7df9fe11e88bcfe41f13b60c62.html
-广东卫视,webview://https://www.gdtv.cn/tvChannelDetail/43
-贵州卫视,webview://https://www.gzstv.com/tv/ch01
-湖南卫视,webview://http://tc.hnntv.cn/zb/28666112.shtml
-河北卫视,webview://https://www.hebtv.com/19/19js/st/xdszb/index.shtml?index=0
-黑龙江卫视,webview://https://www.hljtv.com/live/
-河南卫视,webview://https://static.hntv.tv/kds/#/
-湖北卫视,webview://https://news.hbtv.com.cn/app/tv/431
-吉林卫视,webview://https://www.jlntv.cn/tv?id=104
-江苏卫视,webview://https://live.jstv.com/
-江西卫视,webview://https://www.jxntv.cn/live/#/jxtv1
-辽宁卫视,webview://https://www.nmtv.cn/liveTv
-宁夏卫视,webview://http://www.nxtv.com.cn/tv/ws/
-青海卫视,webview://https://www.qhbtv.com/new_index/live/folder2646/
-山东卫视,webview://https://v.iqilu.com/live/sdtv/index.html
-山西卫视,webview://https://www.sxrtv.com/tv/
-陕西卫视,webview://http://www.sxtvs.com/sxtvs_sxws/index.html
-四川卫视,webview://https://www.sctv.com/watchTV
-天津卫视,webview://https://www.vtibet.cn/html/CHAL1492477520535104/2021111212835975309/
-新疆卫视,webview://https://www.xjtvs.com.cn/column/tv/434
-云南卫视,webview://https://www.yntv.cn/live.html
 
 地方,#genre#
 钟祥综合,webview://https://m-zhongxiang.cjyun.org/zhibo/index.html
