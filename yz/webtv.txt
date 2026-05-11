@@ -39,29 +39,6 @@ CCTV-17 农业农村,webview://https://yangshipin.cn/tv/home?pid=600001810
 CCTV风云剧场,webview://https://yangshipin.cn/tv/home?pid=600099658
 CCTV第一剧场频道,webview://https://www.yangshipin.cn/tv/home?pid=600099655
 CCTV怀旧剧场,webview://https://yangshipin.cn/tv/home?pid=600099620
-CCTV-1 综合,webview://https://m.miguvideo.com/m/liveDetail/608807420
-CCTV-2 财经,webview://https://m.miguvideo.com/m/liveDetail/631780532
-CCTV-3 综艺,webview://https://m.miguvideo.com/m/liveDetail/624878271
-CCTV-4 中文国际,webview://https://m.miguvideo.com/m/liveDetail/631780421
-CCTV-5 体育,webview://https://m.miguvideo.com/m/liveDetail/641886683
-CCTV-5+ 体育赛事,webview://https://m.miguvideo.com/m/liveDetail/641886773
-CCTV-6 电影,webview://https://m.miguvideo.com/m/liveDetail/624878396
-CCTV-7 国防军事,webview://https://m.miguvideo.com/m/liveDetail/673168121
-CCTV-8 电视剧,webview://https://m.miguvideo.com/m/liveDetail/624878356
-CCTV-9 纪录,webview://https://m.miguvideo.com/m/liveDetail/673168140
-CCTV-10 科教,webview://https://m.miguvideo.com/m/liveDetail/624878405
-CCTV-11 戏曲,webview://https://m.miguvideo.com/m/liveDetail/667987558
-CCTV-12 社会与法,webview://https://m.miguvideo.com/m/liveDetail/673168185
-CCTV-13 新闻,webview://https://m.miguvideo.com/m/liveDetail/608807423
-CCTV-14 少儿,webview://https://m.miguvideo.com/m/liveDetail/624878440
-CCTV-15 音乐,webview://https://m.miguvideo.com/m/liveDetail/673168223
-CCTV-17 农业农村,webview://https://m.miguvideo.com/m/liveDetail/673168256
-CCTV-4 中文国际 (欧),webview://https://m.miguvideo.com/m/liveDetail/608807419
-CCTV-4 中文国际 (美),webview://https://m.miguvideo.com/m/liveDetail/608807416
-CGTN,webview://https://m.miguvideo.com/m/liveDetail/609017205
-中央新影·老故事,webview://https://m.miguvideo.com/m/liveDetail/884121956
-中央新影·发现之旅,webview://https://m.miguvideo.com/m/liveDetail/624878970
-中央新影·中学生,webview://https://m.miguvideo.com/m/liveDetail/708869532
 CCTV-1 综合,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=1
 CCTV-3 综艺,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=2
 CCTV-5 体育,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=3
@@ -72,23 +49,8 @@ CCTV-10 科教,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=7
 CCTV-11 戏曲,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=8
 CCTV-12 社会与法,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=9
 CCTV-13 新闻,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=10
-CETV-1,webview://https://m.miguvideo.com/m/liveDetail/923287154
-CETV-2,webview://https://m.miguvideo.com/m/liveDetail/923287211
-CETV-4,webview://https://m.miguvideo.com/m/liveDetail/923287339
 
 卫视,#genre#
-江苏卫视,webview://https://m.miguvideo.com/m/liveDetail/623899368
-东方卫视,webview://https://m.miguvideo.com/m/liveDetail/651632648
-湖北卫视,webview://https://m.miguvideo.com/m/liveDetail/947472496
-广东卫视,webview://https://m.miguvideo.com/m/liveDetail/608831231
-海南卫视,webview://https://m.miguvideo.com/m/liveDetail/947472502
-河南卫视,webview://https://m.miguvideo.com/m/liveDetail/790187291
-福建东南卫视,webview://https://m.miguvideo.com/m/liveDetail/849116810
-江西卫视,webview://https://m.miguvideo.com/m/liveDetail/783847495
-陕西卫视,webview://https://m.miguvideo.com/m/liveDetail/738910838
-青海卫视,webview://https://m.miguvideo.com/m/liveDetail/947472506
-大湾区卫视,webview://https://m.miguvideo.com/m/liveDetail/608917627
-海峡卫视,webview://https://m.miguvideo.com/m/liveDetail/849119120
 北京卫视,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=11
 浙江卫视,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=12
 河南卫视,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=14
@@ -149,7 +111,6 @@ CETV-4,webview://https://m.miguvideo.com/m/liveDetail/923287339
 天津卫视,webview://https://www.vtibet.cn/html/CHAL1492477520535104/2021111212835975309/
 新疆卫视,webview://https://www.xjtvs.com.cn/column/tv/434
 云南卫视,webview://https://www.yntv.cn/live.html
-
 
 地方,#genre#
 钟祥综合,webview://https://m-zhongxiang.cjyun.org/zhibo/index.html
