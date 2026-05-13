@@ -37,7 +37,7 @@ CCTV-16 奥林匹克,webview://https://yangshipin.cn/tv/home?pid=600098637
 CCTV-17 农业农村,webview://https://yangshipin.cn/tv/home?pid=600001810
 中国教育电视台1,webview://https://yangshipin.cn/tv/home?pid=600171827
 CCTV风云剧场,webview://https://yangshipin.cn/tv/home?pid=600099658
-CCTV第一剧场频道,webview://https://www.yangshipin.cn/tv/home?pid=600099655
+CCTV第一剧场,webview://https://www.yangshipin.cn/tv/home?pid=600099655
 CCTV怀旧剧场,webview://https://yangshipin.cn/tv/home?pid=600099620
 
 卫视,#genre#
