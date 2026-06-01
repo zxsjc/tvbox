@@ -5,7 +5,7 @@
   "sites": [
     {
       "key": "NewDouBan",
-      "name": "🐮【王二小放牛娃】🐮",
+      "name": "🐮【朵朵影视】🐮",
       "type": 3,
       "api": "csp_NewDouBanGuard",
       "searchable": 0,
@@ -15,7 +15,7 @@
     },
     {
       "key": "Doubana",
-      "name": "🐮【更新日期:20260601】🐮",
+      "name": "🐮【朵朵推荐】🐮",
       "type": 3,
       "api": "csp_NewDouBanGuard",
       "searchable": 0,
@@ -968,6 +968,13 @@
     "static-mozai.4gtv.tv"
   ],
   "lives": [
+
+     {
+      "name": "朵朵直播",
+      "type": 0,
+      "url": "https://gh-proxy.com/https://raw.githubusercontent.com/best-fan/iptv-sources/refs/heads/main/cn_all.m3u8",
+      "playerType": 2
+    },
     {
       "name": "Kimentanm",
       "type": 0,
