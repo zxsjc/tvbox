@@ -1,27 +1,17 @@
 央视,#genre#
-CCTV-1 综合,http://media.hndyjyfw.gov.cn/live/jz-cctv-1/live.m3u8
 CCTV-1 综合,webview://https://tv.cctv.com/live/cctv1/
 CCTV-2 财经,webview://https://tv.cctv.com/live/cctv2/
-CCTV-3 综合,http://media.hndyjyfw.gov.cn/live/jz-cctv-3/live.m3u8
 CCTV-3 综艺,webview://https://tv.cctv.com/live/cctv3/
 CCTV-4 中文国际,webview://https://tv.cctv.com/live/cctv4/
-CCTV-5 体育,http://media.hndyjyfw.gov.cn/live/jz-cctv-5/live.m3u8
 CCTV-5 体育,webview://https://tv.cctv.com/live/cctv5/
 CCTV+5 体育赛事,webview://https://tv.cctv.com/live/cctv5plus/
-CCTV-6 电影,http://media.hndyjyfw.gov.cn/live/jz-cctv-6/live.m3u8
 CCTV-6 电影,webview://https://tv.cctv.com/live/cctv6/
-CCTV-7 国防军事,http://media.hndyjyfw.gov.cn/live/jz-cctv-7/live.m3u8
 CCTV-7 国防军事,webview://https://tv.cctv.com/live/cctv7/
 CCTV-8 电视剧,webview://https://tv.cctv.com/live/cctv8/
-CCTV-9 纪录,http://media.hndyjyfw.gov.cn/live/jz-cctv-9/live.m3u8
 CCTV-9 纪录,webview://https://tv.cctv.com/live/cctvjilu/
-CCTV-10 科教,http://media.hndyjyfw.gov.cn/live/jz-cctv-10/live.m3u8
 CCTV-10 科教,webview://https://tv.cctv.com/live/cctv10/
-CCTV-11 戏曲,http://media.hndyjyfw.gov.cn/live/jz-cctv-11/live.m3u8
 CCTV-11 戏曲,webview://https://tv.cctv.com/live/cctv11/
-CCTV-12 社会与法,http://media.hndyjyfw.gov.cn/live/jz-cctv-12/live.m3u8
 CCTV-12 社会与法,webview://https://tv.cctv.com/live/cctv12/
-CCTV-13 新闻,http://media.hndyjyfw.gov.cn/live/jz-cctv-13/live.m3u8
 CCTV-13 新闻,webview://https://tv.cctv.com/live/cctv13/
 CCTV-14 少儿,webview://https://tv.cctv.com/live/cctvchild/
 CCTV-15 音乐,webview://https://tv.cctv.com/live/cctv15/
@@ -52,7 +42,6 @@ CCTV怀旧剧场,webview://https://yangshipin.cn/tv/home?pid=600099620
 
 卫视,#genre#
 安徽卫视,webview://https://yangshipin.cn/tv/home?pid=600002532
-北京卫视,http://media.hndyjyfw.gov.cn/live/jz-beijingweishi/live.m3u8
 北京卫视,webview://https://yangshipin.cn/tv/home?pid=600002309
 重庆卫视,webview://https://yangshipin.cn/tv/home?pid=600002531
 东南卫视,webview://https://yangshipin.cn/tv/home?pid=600002484
@@ -65,7 +54,6 @@ CCTV怀旧剧场,webview://https://yangshipin.cn/tv/home?pid=600099620
 海南卫视,webview://https://yangshipin.cn/tv/home?pid=600002506
 河北卫视,webview://https://yangshipin.cn/tv/home?pid=600002493
 黑龙江卫视,webview://https://yangshipin.cn/tv/home?pid=600002498
-河南卫视,http://media.hndyjyfw.gov.cn/live/jz-hnweishi/live.m3u8
 河南卫视,webview://https://yangshipin.cn/tv/home?pid=600002525
 湖北卫视,webview://https://yangshipin.cn/tv/home?pid=600002508
 吉林卫视,webview://https://yangshipin.cn/tv/home?pid=600190405
@@ -83,7 +71,6 @@ CCTV怀旧剧场,webview://https://yangshipin.cn/tv/home?pid=600099620
 西藏卫视,webview://https://yangshipin.cn/tv/home?pid=600190403
 新疆卫视,webview://https://yangshipin.cn/tv/home?pid=600152138
 云南卫视,webview://https://yangshipin.cn/tv/home?pid=600190402
-浙江卫视,http://media.hndyjyfw.gov.cn/live/jz-zhejiangweishi/live.m3u8
 浙江卫视,webview://https://yangshipin.cn/tv/home?pid=600002520
 安徽卫视,webview://https://www.ahtv.cn/folder9000/folder20193?channelIndex=0
 北京卫视,webview://https://www.brtn.cn/btv/btvsy_index
