@@ -104,6 +104,7 @@ CCTV怀旧剧场,webview://https://yangshipin.cn/tv/home?pid=600099620
 钟祥综合,https://zhongxiang-live21.cjyun.org/10103/s10103-zxtv.m3u8?auth_key=1798732799-ced13be0a8ae11efa7dfa7dfd677b8f3-0-cd69fac497c320a32393e02373d97f63
 荆门综合,http://stream.jmtv.com.cn/xwzh/playlist.m3u8?_upt=48a66c051767076862
 每经AI电视,https://swiftplay.hxkjmedia.com/tv/spbW.m3u8
+点掌财经,http://volcano.aniu.tv/live/aniu2/index.m3u8
 湖北经视,webview://https://news.hbtv.com.cn/app/tv/432
 湖北综合,webview://https://news.hbtv.com.cn/app/tv/433
 湖北影视,webview://https://news.hbtv.com.cn/app/tv/435
