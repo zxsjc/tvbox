@@ -1,7 +1,9 @@
 央视,#genre#
 CCTV-1 综合,webview://https://ysxw.cctv.cn/landscape.html?toc_style_id=feeds_only_back&liveRoomNumber=11200132825562653886&channelId=1215&ban=1
 CCTV-1 综合,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=1
+CCTV-1 综合,webview:// https://ysxw.cctv.cn/landscape.html?toc_style_id=feeds_only_back&liveRoomNumber=11200132825562653886&channelId=1215&ban=1
 CCTV-1 综合,webview://https://tv.cctv.com/live/cctv1/
+CCTV-2 财经,webview:// https://ysxw.cctv.cn/landscape.html?toc_style_id=feeds_only_back&liveRoomNumber=12030532124776958103&channelId=1215&ban=1  
 CCTV-2 财经,webview://https://tv.cctv.com/live/cctv2/
 CCTV-3 综艺,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=2
 CCTV-3 综艺,webview://https://tv.cctv.com/live/cctv3/
@@ -14,12 +16,18 @@ CCTV-6 电影,webview://https://tv.cctv.com/live/cctv6/
 CCTV-7 国防军事,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=5
 CCTV-7 国防军事,webview://https://tv.cctv.com/live/cctv7/
 CCTV-8 电视剧,webview://https://tv.cctv.com/live/cctv8/
+CCTV-9 记录,webview:// https://ysxw.cctv.cn/landscape.html?toc_style_id=feeds_only_back&liveRoomNumber=7252237247689203957&channelId=1215&ban=1
 CCTV-9 纪录,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=6
 CCTV-9 纪录,webview://https://tv.cctv.com/live/cctvjilu/
+CCTV-10 科教,webview:// https://ysxw.cctv.cn/landscape.html?toc_style_id=feeds_only_back&liveRoomNumber=14589146016461298119&channelId=1215&ban=1
 CCTV-10 科教,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=7
 CCTV-10 科教,webview://https://tv.cctv.com/live/cctv10/
 CCTV-11 戏曲,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=8
+CCTV-13 新闻,webview:// https://ysxw.cctv.cn/landscape.html?toc_style_id=feeds_only_back&liveRoomNumber=16265686808730585228&channelId=1215&ban=1
+CCTV-14 少儿,webview:// https://ysxw.cctv.cn/landscape.html?toc_style_id=feeds_only_back&liveRoomNumber=10620168294224708952&channelId=1215&ban=1
+CCTV-17 农业农村,webview://https://ysxw.cctv.cn/landscape.html?toc_style_id=feeds_only_back&liveRoomNumber=4496917190172866934&channelId=1215&ban=1
 CCTV-11 戏曲,webview://https://tv.cctv.com/live/cctv11/
+CCTV-12 社会与法,webview:// https://ysxw.cctv.cn/landscape.html?toc_style_id=feeds_only_back&liveRoomNumber=13180385922471124325&channelId=1215&ban=1
 CCTV-12 社会与法,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=9
 CCTV-12 社会与法,webview://https://tv.cctv.com/live/cctv12/
 CCTV-13 新闻,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=10
@@ -52,6 +60,25 @@ CCTV第一剧场,webview://https://www.yangshipin.cn/tv/home?pid=600099655
 CCTV怀旧剧场,webview://https://yangshipin.cn/tv/home?pid=600099620
 
 卫视,#genre#
+东方卫视,webview://https://www.xuexi.cn/xxqg.html?id=b03d633a64f14712b1b78ad5336fac2c
+江苏卫视,webview://https://live.jstv.com/?channelId=662
+江苏卫视,webview://https://live.jstv.com/?channelId=676
+浙江卫视,webview://https://www.cztv.com/liveTV
+山东卫视,webview://http://v.iqilu.com/live/sdtv/
+安徽卫视,webview://https://www.ahrtv.cn/folder30126/folder30131?channelIndex=0
+广东卫视,webview://https://www.gdtv.cn/tvChannelDetail/43
+广西卫视,webview://https://tv.gxtv.cn/channel/channelivePlay_e7a7ab7df9fe11e88bcfe41f13b60c62.html
+深圳卫视,webview://https://www.sztv.com.cn/dianshi.shtml?id=7867
+深圳卫视,webview://https://www.sztv.com.cn/dianshi.shtml?id=24725
+天津卫视,webview://https://www.xuexi.cn/xxqg.html?id=f34309e518fb41579c46cbef4d56c51d
+河北卫视,webview://https://www.hebtv.com/19/19js/st/xdszb/index.shtml?index=0
+山西卫视,webview://https://apphhplushttps.sxrtv.com/television/live_wap_650.html
+山西卫视,webview://https://www.sxrtv.com/tv/index.shtml
+内蒙古卫视,webview://https://www.nmtv.cn/liveTv
+陕西卫视,webview://http://www.sxtvs.com/sxtvs_sxws/index.html
+陕西卫视,webview://http://live.snrtv.com/
+新疆卫视,webview://https://www.xjtvs.com.cn/column/tv/434?channelId=1
+辽宁卫视,http://by4.nty.tv189.cn/live/tm-dxlnws-4000k.m3u8
 安徽卫视,webview://https://yangshipin.cn/tv/home?pid=600002532
 北京卫视,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=12
 北京卫视,webview://https://yangshipin.cn/tv/home?pid=600002309
