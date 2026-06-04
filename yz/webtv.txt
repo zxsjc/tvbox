@@ -54,8 +54,6 @@ CCTV怀旧剧场,webview://https://yangshipin.cn/tv/home?pid=600099620
 山东卫视,webview://http://v.iqilu.com/live/sdtv/
 广东卫视,webview://https://www.gdtv.cn/tvChannelDetail/43
 广西卫视,webview://https://tv.gxtv.cn/channel/channelivePlay_e7a7ab7df9fe11e88bcfe41f13b60c62.html
-深圳卫视,webview://https://www.sztv.com.cn/dianshi.shtml?id=7867
-深圳卫视,webview://https://www.sztv.com.cn/dianshi.shtml?id=24725
 天津卫视,webview://https://www.xuexi.cn/xxqg.html?id=f34309e518fb41579c46cbef4d56c51d
 山西卫视,webview://https://apphhplushttps.sxrtv.com/television/live_wap_650.html
 山西卫视,webview://https://www.sxrtv.com/tv/index.shtml
