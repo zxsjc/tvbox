@@ -60,18 +60,13 @@ CCTV第一剧场,webview://https://www.yangshipin.cn/tv/home?pid=600099655
 CCTV怀旧剧场,webview://https://yangshipin.cn/tv/home?pid=600099620
 
 卫视,#genre#
-东方卫视,webview://https://www.xuexi.cn/xxqg.html?id=b03d633a64f14712b1b78ad5336fac2c
-江苏卫视,webview://https://live.jstv.com/?channelId=662
-江苏卫视,webview://https://live.jstv.com/?channelId=676
 浙江卫视,webview://https://www.cztv.com/liveTV
 山东卫视,webview://http://v.iqilu.com/live/sdtv/
-安徽卫视,webview://https://www.ahrtv.cn/folder30126/folder30131?channelIndex=0
 广东卫视,webview://https://www.gdtv.cn/tvChannelDetail/43
 广西卫视,webview://https://tv.gxtv.cn/channel/channelivePlay_e7a7ab7df9fe11e88bcfe41f13b60c62.html
 深圳卫视,webview://https://www.sztv.com.cn/dianshi.shtml?id=7867
 深圳卫视,webview://https://www.sztv.com.cn/dianshi.shtml?id=24725
 天津卫视,webview://https://www.xuexi.cn/xxqg.html?id=f34309e518fb41579c46cbef4d56c51d
-河北卫视,webview://https://www.hebtv.com/19/19js/st/xdszb/index.shtml?index=0
 山西卫视,webview://https://apphhplushttps.sxrtv.com/television/live_wap_650.html
 山西卫视,webview://https://www.sxrtv.com/tv/index.shtml
 内蒙古卫视,webview://https://www.nmtv.cn/liveTv
