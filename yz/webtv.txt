@@ -86,7 +86,6 @@ CCTV怀旧剧场,webview://https://yangshipin.cn/tv/home?pid=600099620
 天津卫视,webview://https://yangshipin.cn/tv/home?pid=600152137
 山西卫视,webview://https://www.sxrtv.com/tv/index.shtml
 江西卫视,webview://https://yangshipin.cn/tv/home?pid=600002503
-北京卫视,webview://https://www.brtn.cn/btv/btvsy_index
 北京卫视,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=12
 北京卫视,webview://https://yangshipin.cn/tv/home?pid=600002309
 东南卫视,webview://https://yangshipin.cn/tv/home?pid=600002484
