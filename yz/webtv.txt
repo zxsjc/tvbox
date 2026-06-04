@@ -16,7 +16,7 @@ CCTV-6 电影,webview://https://tv.cctv.com/live/cctv6/
 CCTV-7 国防军事,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=5
 CCTV-7 国防军事,webview://https://tv.cctv.com/live/cctv7/
 CCTV-8 电视剧,webview://https://tv.cctv.com/live/cctv8/
-CCTV-9 记录,webview://https://ysxw.cctv.cn/landscape.html?toc_style_id=feeds_only_back&liveRoomNumber=7252237247689203957&channelId=1215&ban=1
+CCTV-9 纪录,webview://https://ysxw.cctv.cn/landscape.html?toc_style_id=feeds_only_back&liveRoomNumber=7252237247689203957&channelId=1215&ban=1
 CCTV-9 纪录,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=6
 CCTV-9 纪录,webview://https://tv.cctv.com/live/cctvjilu/
 CCTV-10 科教,webview://https://ysxw.cctv.cn/landscape.html?toc_style_id=feeds_only_back&liveRoomNumber=14589146016461298119&channelId=1215&ban=1
