@@ -3,7 +3,7 @@ CCTV-1 综合,webview://https://ysxw.cctv.cn/landscape.html?toc_style_id=feeds_o
 CCTV-1 综合,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=1
 CCTV-1 综合,webview:// https://ysxw.cctv.cn/landscape.html?toc_style_id=feeds_only_back&liveRoomNumber=11200132825562653886&channelId=1215&ban=1
 CCTV-1 综合,webview://https://tv.cctv.com/live/cctv1/
-CCTV-2 财经,webview:// https://ysxw.cctv.cn/landscape.html?toc_style_id=feeds_only_back&liveRoomNumber=12030532124776958103&channelId=1215&ban=1  
+CCTV-2 财经,webview://https://ysxw.cctv.cn/landscape.html?toc_style_id=feeds_only_back&liveRoomNumber=12030532124776958103&channelId=1215&ban=1  
 CCTV-2 财经,webview://https://tv.cctv.com/live/cctv2/
 CCTV-3 综艺,webview://https://www.hndyjyfw.gov.cn/livePlay.html?u=2
 CCTV-3 综艺,webview://https://tv.cctv.com/live/cctv3/
