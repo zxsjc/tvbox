@@ -105,7 +105,6 @@ CCTV怀旧剧场,webview://https://yangshipin.cn/tv/home?pid=600099620
 西藏卫视,webview://https://yangshipin.cn/tv/home?pid=600190403
 云南卫视,webview://https://yangshipin.cn/tv/home?pid=600190402
 地方,#genre#
-钟祥综合,webview://https://m-zhongxiang.cjyun.org/zhibo/index.html
 荆门综合,http://stream.jmtv.com.cn/xwzh/playlist.m3u8?_upt=48a66c051767076862
 每经AI电视,https://swiftplay.hxkjmedia.com/tv/spbW.m3u8
 点掌财经,http://volcano.aniu.tv/live/aniu2/index.m3u8
