@@ -35,6 +35,12 @@ CCTV-16 奥林匹克,webview://https://tv.cctv.com/live/cctv16/
 CCTV-16 奥林匹克,webview://https://yangshipin.cn/tv/home?pid=600098637
 CCTV-17 农业农村,webview://https://tv.cctv.com/live/cctv17/
 CCTV-17 农业农村,webview://https://yangshipin.cn/tv/home?pid=600001810
+CCTV4欧洲,webview://https://tv.cctv.com/live/cctveurope/
+CCTV4美洲,webview://https://tv.cctv.com/live/cctvamerica/
+CCTV4K,webview://https://yangshipin.cn/tv/home?pid=600002264
+CCTV8K,webview://https://yangshipin.cn/tv/home?pid=600156816
+CGTN,webview://https://yangshipin.cn/tv/home?pid=600014550
+CGTN纪录,webview://https://yangshipin.cn/tv/home?pid=600084781
 中国教育电视台1,webview://https://yangshipin.cn/tv/home?pid=600171827
 CCTV风云剧场,webview://https://yangshipin.cn/tv/home?pid=600099658
 CCTV第一剧场,webview://https://www.yangshipin.cn/tv/home?pid=600099655
