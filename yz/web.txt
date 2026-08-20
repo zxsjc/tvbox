@@ -1,1 +1,69 @@
-
+央视频,#genre#
+CCTV-1 综合,https://yangshipin.cn/tv/home?pid=600001859
+CCTV-2 财经,https://yangshipin.cn/tv/home?pid=600001800
+CCTV-3 综艺,https://yangshipin.cn/tv/home?pid=600001801
+CCTV-4 中文国际,https://yangshipin.cn/tv/home?pid=600001814
+CCTV-5 体育,https://yangshipin.cn/tv/home?pid=600001818
+CCTV+5 体育赛事,https://www.yangshipin.cn/tv/home?pid=600001817
+CCTV-6 电影,https://yangshipin.cn/tv/home?pid=600108442
+CCTV-7 国防军事,https://yangshipin.cn/tv/home?pid=600004092
+CCTV-8 电视剧,https://yangshipin.cn/tv/home?pid=600001803
+CCTV-9 纪录,https://yangshipin.cn/tv/home?pid=600004078
+CCTV-10 科教,https://yangshipin.cn/tv/home?pid=600001805
+CCTV-11 戏曲,https://yangshipin.cn/tv/home?pid=600001806
+CCTV-12 社会与法,https://yangshipin.cn/tv/home?pid=600001807
+CCTV-13 新闻,https://yangshipin.cn/tv/home?pid=600001811
+CCTV-14 少儿,https://yangshipin.cn/tv/home?pid=600001809
+CCTV-15 音乐,https://yangshipin.cn/tv/home?pid=600001815
+CCTV-16 奥林匹克,https://yangshipin.cn/tv/home?pid=600098637
+CCTV-17 农业农村,https://yangshipin.cn/tv/home?pid=600001810
+CCTV4K,https://yangshipin.cn/tv/home?pid=600002264
+CCTV8K,https://yangshipin.cn/tv/home?pid=600156816
+CGTN,https://yangshipin.cn/tv/home?pid=600014550
+CGTN纪录,https://yangshipin.cn/tv/home?pid=600084781
+中国教育电视台1,https://yangshipin.cn/tv/home?pid=600171827
+CCTV风云剧场,https://yangshipin.cn/tv/home?pid=600099658
+CCTV第一剧场,https://www.yangshipin.cn/tv/home?pid=600099655
+CCTV怀旧剧场,https://yangshipin.cn/tv/home?pid=600099620
+安徽卫视,https://yangshipin.cn/tv/home?pid=600002532
+东方卫视,https://yangshipin.cn/tv/home?pid=600002483
+广西卫视,https://yangshipin.cn/tv/home?pid=600002509
+广东卫视,https://yangshipin.cn/tv/home?pid=600002485
+贵州卫视,https://yangshipin.cn/tv/home?pid=600002490
+河北卫视,https://yangshipin.cn/tv/home?pid=600002493
+河南卫视,https://yangshipin.cn/tv/home?pid=600002525
+湖北卫视,https://yangshipin.cn/tv/home?pid=600002508
+吉林卫视,https://yangshipin.cn/tv/home?pid=600190405
+山东卫视,https://yangshipin.cn/tv/home?pid=600002513
+陕西卫视,https://yangshipin.cn/tv/home?pid=600190400
+新疆卫视,https://www.xjtvs.com.cn/column/tv/434?channelId=1
+新疆卫视,https://yangshipin.cn/tv/home?pid=600152138
+浙江卫视,https://yangshipin.cn/tv/home?pid=600002520
+天津卫视,https://yangshipin.cn/tv/home?pid=600152137
+江西卫视,https://yangshipin.cn/tv/home?pid=600002503
+北京卫视,https://yangshipin.cn/tv/home?pid=600002309
+东南卫视,https://yangshipin.cn/tv/home?pid=600002484
+甘肃卫视,https://yangshipin.cn/tv/home?pid=600190408
+湖南卫视,https://yangshipin.cn/tv/home?pid=600002475
+海南卫视,https://yangshipin.cn/tv/home?pid=600002506
+内蒙古卫视,https://yangshipin.cn/tv/home?pid=600190401
+黑龙江卫视,https://yangshipin.cn/tv/home?pid=600002498
+江苏卫视,https://yangshipin.cn/tv/home?pid=600002521
+辽宁卫视,https://yangshipin.cn/tv/home?pid=600002505
+宁夏卫视,https://yangshipin.cn/tv/home?pid=600190737
+青海卫视,https://yangshipin.cn/tv/home?pid=600190406
+山西卫视,https://yangshipin.cn/tv/home?pid=600190407
+四川卫视,https://yangshipin.cn/tv/home?pid=600002516
+重庆卫视,https://yangshipin.cn/tv/home?pid=600002531
+西藏卫视,https://yangshipin.cn/tv/home?pid=600190403
+云南卫视,https://yangshipin.cn/tv/home?pid=600190402
+地方,#genre#
+荆门综合,http://stream.jmtv.com.cn/xwzh/playlist.m3u8?_upt=48a66c051767076862
+每经AI电视,https://swiftplay.hxkjmedia.com/tv/spbW.m3u8
+点掌财经,http://volcano.aniu.tv/live/aniu2/index.m3u8
+湖北经视,https://news.hbtv.com.cn/app/tv/432
+湖北综合,https://news.hbtv.com.cn/app/tv/433
+湖北影视,https://news.hbtv.com.cn/app/tv/435
+湖北生活,https://news.hbtv.com.cn/app/tv/436
+湖北教育,https://news.hbtv.com.cn/app/tv/437
+湖北垄上,https://news.hbtv.com.cn/app/tv/438
