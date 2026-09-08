@@ -35,8 +35,6 @@ CCTV怀旧剧场,https://yangshipin.cn/tv/home?pid=600099620
 湖北卫视,https://yangshipin.cn/tv/home?pid=600002508
 吉林卫视,https://yangshipin.cn/tv/home?pid=600190405
 山东卫视,https://yangshipin.cn/tv/home?pid=600002513
-陕西卫视,https://yangshipin.cn/tv/home?pid=600190400
-新疆卫视,https://www.xjtvs.com.cn/column/tv/434?channelId=1
 新疆卫视,https://yangshipin.cn/tv/home?pid=600152138
 浙江卫视,https://yangshipin.cn/tv/home?pid=600002520
 天津卫视,https://yangshipin.cn/tv/home?pid=600152137
@@ -61,9 +59,3 @@ CCTV怀旧剧场,https://yangshipin.cn/tv/home?pid=600099620
 荆门综合,http://stream.jmtv.com.cn/xwzh/playlist.m3u8?_upt=48a66c051767076862
 每经AI电视,https://swiftplay.hxkjmedia.com/tv/spbW.m3u8
 点掌财经,http://volcano.aniu.tv/live/aniu2/index.m3u8
-湖北经视,https://news.hbtv.com.cn/app/tv/432
-湖北综合,https://news.hbtv.com.cn/app/tv/433
-湖北影视,https://news.hbtv.com.cn/app/tv/435
-湖北生活,https://news.hbtv.com.cn/app/tv/436
-湖北教育,https://news.hbtv.com.cn/app/tv/437
-湖北垄上,https://news.hbtv.com.cn/app/tv/438
