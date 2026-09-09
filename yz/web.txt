@@ -26,6 +26,7 @@ CCTV8K,webview://https://yangshipin.cn/tv/home?pid=600156816
 东方卫视,webview://https://yangshipin.cn/tv/home?pid=600002483
 安徽卫视,webview://https://yangshipin.cn/tv/home?pid=600002532
 广东卫视,webview://https://yangshipin.cn/tv/home?pid=600002485
+深圳卫视,webview://https://yangshipin.cn/tv/home?pid=600002481
 河北卫视,webview://https://yangshipin.cn/tv/home?pid=600002493
 河南卫视,webview://https://yangshipin.cn/tv/home?pid=600002525
 湖北卫视,webview://https://yangshipin.cn/tv/home?pid=600002508
