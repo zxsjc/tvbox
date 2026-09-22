@@ -53,5 +53,5 @@ CCTV8K,webview://https://yangshipin.cn/tv/home?pid=600156816
 西藏卫视,webview://https://yangshipin.cn/tv/home?pid=600190403
 地方,#genre#
 荆门综合,http://stream.jmtv.com.cn/xwzh/playlist.m3u8?_upt=48a66c051767076862
-每经AI电视,https://swiftplay.hxkjmedia.com/tv/spbW.m3u8
+每经AI电视,webview://https://finance.jrj.com.cn/jrjlive2025/?to=pc
 点掌财经,http://volcano.aniu.tv/live/aniu2/index.m3u8
