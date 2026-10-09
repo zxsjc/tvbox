@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1920, initial-scale=1.0, user-scalable=no">
+<title>钟祥新闻 · TV点播</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:100%; height:100%; background:#0b0f14; color:#e8eaed;
+              font-family:"Microsoft YaHei","PingFang SC","Source Han Sans SC",sans-serif;
+              overflow:hidden; user-select:none; }
+
+  /* ===== 列表页 ===== */
+  #listView { display:flex; flex-direction:column; width:100%; height:100%; padding:36px 48px 24px; }
+  .header { display:flex; align-items:baseline; justify-content:space-between; margin-bottom:24px; }
+  .header h1 { font-size:44px; font-weight:700; color:#fff; letter-spacing:2px; }
+  .header h1 .bar { display:inline-block; width:8px; height:38px; background:#e53935; vertical-align:-6px; margin-right:16px; border-radius:2px; }
+  .header .meta { font-size:22px; color:#8a93a0; }
+  .header .meta b { color:#ff5252; font-weight:600; }
+
+  #grid { flex:1; display:grid; grid-template-columns:repeat(4,1fr); grid-auto-rows:1fr;
+          gap:22px 24px; overflow:hidden; }
+
+  .card { position:relative; border-radius:10px; overflow:hidden; background:#161c26;
+          cursor:pointer; outline:none;
+          transform:scale(1); transition:transform .12s ease, box-shadow .12s ease, border-color .12s;
+          border:3px solid transparent; display:flex; flex-direction:column; }
+  .card .thumb { position:relative; width:100%; aspect-ratio:16/9; background:#000; overflow:hidden; }
+  .card .thumb img { width:100%; height:100%; object-fit:cover; display:block; }
+  .card .dur { position:absolute; right:8px; bottom:8px; background:rgba(0,0,0,.75);
+               color:#fff; font-size:18px; padding:2px 8px; border-radius:4px; }
+  .card .badge { position:absolute; left:8px; top:8px; background:#e53935; color:#fff;
+                 font-size:18px; padding:2px 10px; border-radius:4px; font-weight:600; }
+  .card .info { padding:12px 14px; flex:1; display:flex; flex-direction:column; justify-content:center; }
+  .card .title { font-size:24px; color:#e8eaed; line-height:1.3;
+                 display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .card .date { font-size:18px; color:#7a8390; margin-top:6px; }
+
+  .card.focus, .card:hover { border-color:#ff5252; transform:scale(1.04);
+                box-shadow:0 0 0 3px #ff5252, 0 12px 32px rgba(229,57,53,.45);
+                background:#1d2530; }
+  .card.focus .title, .card:hover .title { color:#fff; }
+  .card { cursor:pointer; }
+
+  /* 加载/错误 */
+  #status { position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+            font-size:32px; color:#8a93a0; background:#0b0f14; z-index:50; }
+  #status.error { color:#ff8a80; }
+
+  /* ===== 播放页 ===== */
+  #playerView { position:fixed; inset:0; background:#000; display:none; flex-direction:column; z-index:100; }
+  #playerView.on { display:block; }
+  #video { position:absolute; inset:0; width:100%; height:100%; background:#000; }
+  .pbar { position:absolute; left:0; right:0; bottom:0; height:84px;
+          background:linear-gradient(transparent, rgba(0,0,0,.85));
+          display:flex; align-items:flex-end; padding:0 24px 14px; gap:16px;
+          transition:opacity .25s; }
+  #playerView:not(:hover) .pbar { opacity:0; }
+  .pbar .now { font-size:22px; color:#fff; flex:1; white-space:nowrap; overflow:hidden;
+               text-overflow:ellipsis; padding-bottom:6px; }
+  .pbar .btn { font-size:18px; color:#e8eaed; background:rgba(40,50,65,.9);
+               border:1px solid #445; padding:8px 18px; border-radius:6px; cursor:pointer;
+               font-family:inherit; }
+  .pbar .btn:hover { background:#2a3547; border-color:#ff5252; color:#fff; }
+  .pbar .hint { font-size:16px; color:#aab; padding-bottom:8px; }
+  .pbar .hint kbd { display:inline-block; padding:2px 8px; border:1px solid #555; border-radius:4px;
+                    margin:0 3px; color:#ccc; font-family:inherit; }
+
+  /* 暂停/居中提示 */
+  #centerTip { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+               font-size:120px; color:rgba(255,255,255,.85); pointer-events:none;
+               text-shadow:0 4px 24px rgba(0,0,0,.6); display:none; }
+</style>
+</head>
+<body>
+
+<!-- 列表 -->
+<div id="listView">
+  <div class="header">
+    <h1><span class="bar"></span>钟祥新闻 · 最近20期</h1>
+    <div class="meta">共 <b id="totalNum">-</b> 期 · 鼠标点击 / 遥控器 <b>↑↓←→+OK</b> 播放 · 更新于 <span id="updateTime">--:--</span></div>
+  </div>
+  <div id="grid"></div>
+</div>
+
+<div id="status">加载中…</div>
+
+<!-- 播放 -->
+<div id="playerView">
+  <video id="video" autoplay playsinline controls></video>
+  <div id="centerTip">▶</div>
+  <div class="pbar">
+    <div class="now" id="nowTitle">--</div>
+    <button class="btn" id="btnBack">← 返回列表</button>
+    <button class="btn" id="btnFs">全屏切换</button>
+    <div class="hint"><kbd>OK</kbd> 播放/暂停 · <kbd>←→</kbd> 快进10秒 · <kbd>Esc</kbd> 退出</div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var API = "https://m-zhongxiang.cjyun.org/index/ajax/content?page=1&pagesize=20&webmenuid=151&callback=";
+  // 内嵌兜底数据（2026-10-09 抓取）：即使JSONP被拦/离线，打开也能立即显示
+  var EMBEDDED_DATA = [{"id":"153579","title":"钟祥新闻2026年10月7日","time":"2026-10-08 12:44:18","duration":"600","playtime":"10:00","video":"https://videoplus.cjyun.org/20261008/4031465_4031465_1791433115_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202610/a960b8d948fec10770e3aefba7700be2.jpg!w1280_h720.jpg"},{"id":"153560","title":"钟祥新闻2026年10月6日","time":"2026-10-07 22:46:27","duration":"606","playtime":"10:06","video":"https://videoplus.cjyun.org/20261007/4031038_4031038_1791383875_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202610/f6a1484b1c1d4167ea56aa2d3636338e.jpg!w1280_h720.jpg"},{"id":"153559","title":"钟祥新闻2026年10月5日","time":"2026-10-07 22:46:09","duration":"408","playtime":"06:48","video":"https://videoplus.cjyun.org/20261007/4031037_4031037_1791383875_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202610/0c6cc887b41b64dc4ec0f1f960e42fee.jpg!w1280_h720.jpg"},{"id":"153500","title":"钟祥新闻2026年10月2日","time":"2026-10-02 23:15:45","duration":"534","playtime":"08:54","video":"https://videoplus.cjyun.org/20261002/4029405_4029405_1790949924_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202610/d811c040cbc37bb68e151402a485b5f2.jpg!w1920_h1080.jpg"},{"id":"153499","title":"钟祥新闻2026年10月1日","time":"2026-10-02 23:15:24","duration":"504","playtime":"08:24","video":"https://videoplus.cjyun.org/20261002/4029406_4029406_1790949924_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202610/0e9bb5dc8f9bab43ed63ac145338971a.jpg!w1920_h1080.jpg"},{"id":"153469","title":"钟祥新闻2026年9月30日","time":"2026-10-01 17:43:52","duration":"596","playtime":"09:56","video":"https://videoplus.cjyun.org/20260930/4028046_4028046_1790764981_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202609/d2f8d613e1865115df864edcf48417a6.jpg!w1920_h1080.jpg"},{"id":"153458","title":"钟祥新闻2026年9月29日","time":"2026-09-30 16:04:16","duration":"739","playtime":"12:19","video":"https://videoplus.cjyun.org/20260930/4027681_4027681_1790753799_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202609/d79c92cc1a69621d0ae510305135a700.jpg!w1920_h1080.jpg"},{"id":"153360","title":"钟祥新闻2026年9月28日","time":"2026-09-29 10:24:56","duration":"445","playtime":"07:25","video":"https://videoplus.cjyun.org/20260929/4026571_4026571_1790647587_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202609/765aaa9613ed0605861c09a3734d94e5.jpg!w1920_h1080.jpg"},{"id":"153348","title":"钟祥新闻2026年9月25日","time":"2026-09-28 18:26:50","duration":"849","playtime":"14:09","video":"https://videoplus.cjyun.org/20260928/4026177_4026177_1790589863_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202609/cb2bc7caae72223efc77d2f38062fb2b.jpg!w1920_h1080.jpg"},{"id":"153347","title":"钟祥新闻2026年9月24日","time":"2026-09-28 18:26:29","duration":"739","playtime":"12:19","video":"https://videoplus.cjyun.org/20260928/4026178_4026178_1790589863_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202609/5d6dbbdbf0530246d213b7bfceed6473.jpg!w1920_h1080.jpg"},{"id":"153215","title":"钟祥新闻2026年9月23日","time":"2026-09-24 11:30:57","duration":"620","playtime":"10:20","video":"https://videoplus.cjyun.org/20260924/4023780_4023780_1790219100_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202609/a31afcb1c255b199edd97c924e6759f0.jpg!w1280_h720.jpg"},{"id":"153154","title":"钟祥新闻2026年9月22日","time":"2026-09-23 11:54:36","duration":"590","playtime":"09:50","video":"https://videoplus.cjyun.org/20260923/4022926_4022926_1790135019_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202609/55c69d7d78a2ab47769a8cea86fe2f36.jpg!w1280_h720.jpg"},{"id":"153102","title":"钟祥新闻2026年9月21日","time":"2026-09-22 12:17:32","duration":"722","playtime":"12:02","video":"https://videoplus.cjyun.org/20260922/4022105_4022105_1790049981_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202609/8d6d17d72f2b60be6b329545bed76ac8.jpg!w1920_h1080.jpg"},{"id":"153054","title":"钟祥新闻2026年9月18日","time":"2026-09-21 13:05:40","duration":"676","playtime":"11:16","video":"https://videoplus.cjyun.org/20260921/4020956_4020956_1789963161_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202609/6103052f3245bc20a644fc20d4aa9894.jpg!w1920_h1080.jpg"},{"id":"153053","title":"钟祥新闻2026年9月15日","time":"2026-09-21 13:05:23","duration":"542","playtime":"09:02","video":"https://videoplus.cjyun.org/20260921/4020955_4020955_1789963161_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202609/f9987e9c4839484e8edbf9fba133f14d.jpg!w1920_h1080.jpg"},{"id":"152900","title":"钟祥新闻2026年9月16日","time":"2026-09-17 12:37:12","duration":"647","playtime":"10:47","video":"https://videoplus.cjyun.org/20260917/4018269_4018269_1789619397_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202609/13114cc1a4596de54e4ee0ea066f3e9f.jpg!w1920_h1080.jpg"},{"id":"152760","title":"钟祥新闻2026年9月14日","time":"2026-09-15 11:20:00","duration":"635","playtime":"10:35","video":"https://videoplus.cjyun.org/20260915/4016608_4016608_1789441667_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202609/671011f3bc3dbc01bd49ee6e38a388f5.jpg!w1920_h1080.jpg"},{"id":"152818","title":"钟祥新闻2026年9月11日","time":"2026-09-12 18:38:59","duration":"618","playtime":"10:18","video":"https://videoplus.cjyun.org/20260915/4017006_4017006_1789468508_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202609/2e170dfa02cd3cd003e5cdd37e4d9207.jpg!w1280_h720.jpg"},{"id":"152555","title":"钟祥新闻2026年9月10日","time":"2026-09-10 18:18:10","duration":"587","playtime":"09:47","video":"https://videoplus.cjyun.org/20260910/4014046_4014046_1789034651_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202609/dfeb6b59d0de0298aea4463e75214ccd.jpg!w1280_h720.jpg"},{"id":"152554","title":"钟祥新闻2026年9月9日","time":"2026-09-10 18:17:47","duration":"708","playtime":"11:48","video":"https://videoplus.cjyun.org/20260910/4014047_4014047_1789034430_transv.mp4","thumb":"https://img.cjyun.org/a/thumb/10103/202609/7470a4a534c40e7ece53ad32ba74df87.jpg!w1280_h720.jpg"}];
+  var grid = document.getElementById('grid');
+  var statusEl = document.getElementById('status');
+  var totalNum = document.getElementById('totalNum');
+  var list = [];          // 视频数组
+  var focusIdx = 0;       // 当前焦点
+  var ROWS = 5, COLS = 4; // 网格行列
+  var watching = false;   // 是否在播放页
+
+  /* JSONP 加载 */
+  function jsonp(url){
+    return new Promise(function(resolve, reject){
+      var cb = '__cjy_cb_' + Math.floor(Math.random()*1e9);
+      window[cb] = function(data){
+        try { resolve(data); } finally {
+          delete window[cb];
+          var s = document.getElementById(cb);
+          if (s) s.parentNode.removeChild(s);
+        }
+      };
+      var s = document.createElement('script');
+      s.id = cb;
+      s.src = url + cb;
+      s.onerror = function(){ reject(new Error('加载失败')); };
+      document.body.appendChild(s);
+    });
+  }
+
+  function fmtDuration(sec){
+    sec = parseInt(sec)||0;
+    var m = Math.floor(sec/60), s = sec%60;
+    return (m<10?'0':'')+m+':'+(s<10?'0':'')+s;
+  }
+  function fmtDate(timestr){
+    // "2026-10-08 12:44:18" -> "2026-10-08"
+    return (timestr||'').split(' ')[0];
+  }
+
+  function render(){
+    grid.innerHTML = '';
+    list.forEach(function(it, i){
+      var card = document.createElement('div');
+      card.className = 'card';
+      card.tabIndex = 0;
+      var thumb = '';
+      if (typeof it.thumb === 'string') thumb = it.thumb;
+      else if (it.thumb && it.thumb.url) thumb = it.thumb.url;
+      else if (it.thumbs && it.thumbs[0] && it.thumbs[0].url) thumb = it.thumbs[0].url;
+      // 封面用 16:9 大图版本
+      thumb = thumb.replace(/!w\d+_h\d+\.jpg$/i, '!w1280_h720.jpg');
+      card.innerHTML =
+        '<div class="thumb">' +
+          '<img src="'+thumb+'" loading="lazy" ' +
+               'onerror="this.style.opacity=0">' +
+          (i===0 ? '<span class="badge">最新</span>' : '') +
+          '<span class="dur">'+fmtDuration(it.duration||it.playtime)+'</span>' +
+        '</div>' +
+        '<div class="info">' +
+          '<div class="title">'+(it.title||'')+'</div>' +
+          '<div class="date">'+fmtDate(it.time)+'</div>' +
+        '</div>';
+      card.addEventListener('click', function(){ play(i); });
+      grid.appendChild(card);
+    });
+    setFocus(0, true);
+  }
+
+  function cards(){ return grid.querySelectorAll('.card'); }
+  function setFocus(idx, scroll){
+    var all = cards();
+    if (!all.length) return;
+    focusIdx = Math.max(0, Math.min(idx, all.length-1));
+    all.forEach(function(c,i){ c.classList.toggle('focus', i===focusIdx); });
+    if (scroll !== false && all[focusIdx]) {
+      all[focusIdx].scrollIntoView({block:'nearest', inline:'nearest'});
+    }
+  }
+
+  function play(idx){
+    var it = list[idx];
+    if (!it || !it.video) { alert('该期暂无视频地址'); return; }
+    watching = true;
+    var pv = document.getElementById('playerView');
+    var v  = document.getElementById('video');
+    document.getElementById('nowTitle').textContent = (idx+1) + '. ' + (it.title||'');
+    v.src = it.video;
+    pv.classList.add('on');
+    v.play().catch(function(){});
+    // 自动全屏（必须在用户手势触发的调用栈里，浏览器才允许）
+    enterFullscreen();
+  }
+  function stop(){
+    var v = document.getElementById('video');
+    v.pause();
+    v.removeAttribute('src');
+    v.load();
+    document.getElementById('playerView').classList.remove('on');
+    watching = false;
+    exitFullscreen();
+  }
+
+  function enterFullscreen(){
+    var el = document.documentElement;
+    var fn = el.requestFullscreen || el.webkitRequestFullscreen ||
+             el.msRequestFullscreen || el.webkitEnterFullscreen;
+    if (fn) { try { fn.call(el); } catch(e){} }
+    // 部分安卓WebView里只让video自身全屏
+    var v = document.getElementById('video');
+    if (v.webkitEnterFullscreen) { try { v.webkitEnterFullscreen(); } catch(e){} }
+  }
+  function exitFullscreen(){
+    var fn = document.exitFullscreen || document.webkitExitFullscreen ||
+             document.msExitFullscreen;
+    if (fn) { try { fn.call(document); } catch(e){} }
+  }
+
+  // 按钮绑定
+  document.getElementById('btnBack').addEventListener('click', stop);
+  document.getElementById('btnFs').addEventListener('click', function(){
+    if (document.fullscreenElement || document.webkitFullscreenElement) exitFullscreen();
+    else enterFullscreen();
+  });
+
+  /* 遥控器/键盘 */
+  document.addEventListener('keydown', function(e){
+    var k = e.keyCode || e.which;
+    // 播放页
+    if (watching) {
+      // OK/Enter(13) / 中心键 / 5 号键：播放暂停
+      if (k===13 || k===19 || k===66 /*media_play_pause*/ || k===65 /*Numpad5*/) {
+        e.preventDefault();
+        var v = document.getElementById('video');
+        if (v.paused) { v.play(); hideTip(); }
+        else { v.pause(); showTip(); }
+        return;
+      }
+      // 返回 / Backspace / Esc / 4号键
+      if (k===27 || k===8 || k===4 || k===21946) {
+        e.preventDefault(); stop(); return;
+      }
+      // 左右：快进/快退 10s
+      if (k===39) { document.getElementById('video').currentTime += 10; e.preventDefault(); return; }
+      if (k===37) { document.getElementById('video').currentTime -= 10; e.preventDefault(); return; }
+      return;
+    }
+    // 列表页
+    var n = cards().length;
+    if (!n) return;
+    if (k===38) { setFocus(focusIdx - COLS); e.preventDefault(); }       // 上
+    else if (k===40) { setFocus(focusIdx + COLS); e.preventDefault(); } // 下
+    else if (k===37) { setFocus(focusIdx - 1); e.preventDefault(); }   // 左
+    else if (k===39) { setFocus(focusIdx + 1); e.preventDefault(); }     // 右
+    else if (k===13 || k===19) { play(focusIdx); e.preventDefault(); }  // OK
+  });
+
+  var tipTimer = null;
+  function showTip(){
+    var t = document.getElementById('centerTip');
+    t.textContent = '⏸'; t.style.display='block';
+    clearTimeout(tipTimer); tipTimer = setTimeout(function(){ t.style.display='none'; }, 800);
+  }
+  function hideTip(){ document.getElementById('centerTip').style.display='none'; }
+
+  /* 启动：先用内嵌数据立即渲染，再后台拉新 */
+  function applyList(newList, isSilent){
+    var hasUpdate = (newList.length>0 && list.length>0 && newList[0].id !== list[0].id);
+    list = newList;
+    totalNum.textContent = list.length;
+    statusEl.style.display = 'none';
+    if (!watching) render();  // 播放中不重渲染
+    var d = new Date();
+    var hh = (''+d.getHours()).padStart(2,'0'), mm = (''+d.getMinutes()).padStart(2,'0');
+    var t = document.getElementById('updateTime');
+    if (t) t.textContent = hh+':'+mm + (hasUpdate && isSilent ? ' · 已更新' : '');
+  }
+
+  // 1. 立即用内嵌数据渲染（秒开，不依赖网络）
+  applyList(EMBEDDED_DATA, false);
+
+  // 2. 后台拉最新数据，成功就替换
+  function fetchLatest(){
+    return jsonp(API).then(function(data){
+      var newList = (data.data||[]).slice(0,20);
+      if (newList.length) applyList(newList, true);
+    }).catch(function(){ /* 静默失败，继续用内嵌数据 */ });
+  }
+  fetchLatest();
+  setInterval(fetchLatest, 5*60*1000);
+})();
+</script>
+</body>
+</html>
