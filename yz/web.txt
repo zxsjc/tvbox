@@ -53,5 +53,5 @@ CCTV8K,webview://https://yangshipin.cn/tv/home?pid=600156816
 西藏卫视,webview://https://yangshipin.cn/tv/home?pid=600190403
 地方,#genre#
 荆门综合,http://stream.jmtv.com.cn/xwzh/playlist.m3u8?_upt=48a66c051767076862
-钟祥新闻,webview://https://gh-proxy.org/https://raw.githubusercontent.com/zxsjc/tvbox/refs/heads/main/yz/%E9%92%9F%E7%A5%A5%E6%96%B0%E9%97%BBTV.html
+钟祥新闻,webview://https://haoc.neocities.org/%E9%92%9F%E7%A5%A5%E6%96%B0%E9%97%BBTVTV.html
 点掌财经,http://volcano.aniu.tv/live/aniu2/index.m3u8
